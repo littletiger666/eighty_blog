@@ -1,1 +1,7 @@
-<h1>this is the index page</h1>
+<h1>Recent Posts</h1>
+
+<% @posts.each do |post| %>
+  <%= post.title %>
+  <%= post.body %>
+  <br>
+<% end %>
