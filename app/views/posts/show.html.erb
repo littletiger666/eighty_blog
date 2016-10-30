@@ -1,2 +1,6 @@
 <%= @post.title %>
 <%= @post.body %>
+<br>
+<%= link_to 'Back', root_path %>
+<%= link_to 'edit', edit_post_path(@post) %>
+<%= link_to 'delete', post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
