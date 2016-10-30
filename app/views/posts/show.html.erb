@@ -1,5 +1,5 @@
-<%= @post.title %>
-<%= @post.body %>
+<h2><%= @post.title %></h2>
+<%= markdown @post.body %>
 <br>
 <%= link_to 'Back', root_path %>
 <%= link_to 'edit', edit_post_path(@post) %>
