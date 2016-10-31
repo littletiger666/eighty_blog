@@ -1,6 +1,12 @@
 <h2><%= @post.title %></h2>
 <%= markdown @post.body %>
 <br>
+<div id="comments">
+  <%= render @post.comments %>
+
+  <h3>Add a comment:</h3>
+  <%= render "comments/form" %>
+</div>
 <%= link_to 'Back', root_path %>
 <%= link_to 'edit', edit_post_path(@post) %>
 <%= link_to 'delete', post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
