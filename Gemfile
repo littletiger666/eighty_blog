@@ -15,6 +15,7 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'nokogiri'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'rails-bootstrap-markdown'
+gem 'devise', '~> 4.2'
 
 
 group :development, :test do
