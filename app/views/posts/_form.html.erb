@@ -1,9 +1,9 @@
 <%= simple_form_for @post do |f|  %>
-  <%= f.label :title %><br>
-  <%= f.text_field :title %><br>
-  <br>
-  <%= f.label :body %>
-  <%= f.text_area :body %><br>
-  <br>
-  <%= f.submit %>
+
+  <%= f.text_field :title, "placeholder" => "Title?" %>
+
+
+  <%= f.text_area :body, "data-provide" => "markdown", "placeholder" => "Post content..." %>
+
+  <%= f.button :submit %>
 <% end %>

@@ -13,6 +13,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'nokogiri'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'rails-bootstrap-markdown'
 
 
 group :development, :test do
