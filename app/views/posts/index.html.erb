@@ -1,9 +1,5 @@
-<h1>Recent Posts</h1>
-
 <% @posts.each do |post| %>
   <h2><%= link_to post.title, post %></h2>
   <%= markdown post.body %>
   <br>
 <% end %>
-
-<%= link_to 'New Post', new_post_path %>
