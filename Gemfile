@@ -16,6 +16,7 @@ gem 'nokogiri'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'rails-bootstrap-markdown'
 gem 'devise', '~> 4.2'
+gem 'pygments.rb', '~> 0.6.3'
 
 
 group :development, :test do
