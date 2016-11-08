@@ -89,15 +89,12 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
+    mysql2 (0.4.5)
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
-    posix-spawn (0.3.12)
     puma (3.6.0)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -132,6 +129,7 @@ GEM
     redcarpet (3.3.4)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    rouge (2.0.6)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -175,7 +173,6 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -188,12 +185,13 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  mysql2 (~> 0.4.5)
   nokogiri
   puma (~> 3.0)
-  pygments.rb (~> 0.6.3)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-bootstrap-markdown
   redcarpet (~> 3.3, >= 3.3.4)
+  rouge (~> 2.0, >= 2.0.6)
   sass-rails (~> 5.0)
   simple_form (~> 3.3, >= 3.3.1)
   spring

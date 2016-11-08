@@ -1,12 +1,15 @@
+require 'redcarpet'
+require 'rouge'
+require 'rouge/plugins/redcarpet'
+class HTML < Redcarpet::Render::HTML
+  include Rouge::Plugins::Redcarpet # yep, that's it.
+end
+
 module ApplicationHelper
-  class HTMLwithPygments < Redcarpet::Render::HTML
-    def block_code(code, language)
-      Pygments.highlight(code, lexer: language)
-    end
-  end
+
 
   def markdown(text)
-    renderer = HTMLwithPygments
+    renderer = HTML.new
     options = {
       autolink: true,
       no_intra_emphasis: true,
