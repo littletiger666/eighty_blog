@@ -1,13 +1,6 @@
-require 'redcarpet'
-require 'rouge'
-require 'rouge/plugins/redcarpet'
-class HTML < Redcarpet::Render::HTML
-  include Rouge::Plugins::Redcarpet # yep, that's it.
-end
+require 'markdown'
 
 module ApplicationHelper
-
-
   def markdown(text)
     renderer = HTML.new
     options = {
@@ -20,4 +13,5 @@ module ApplicationHelper
     }
     Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
+
 end
