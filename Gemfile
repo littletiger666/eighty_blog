@@ -20,11 +20,15 @@ gem 'rouge', '~> 2.0', '>= 2.0.6'
 # database
 gem 'postgresql'
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+
 group :development do
+  gem 'mina'
+  gem 'mina-puma', require: false
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
