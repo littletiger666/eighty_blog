@@ -2,12 +2,12 @@ class LikesController < ApplicationController
   layout false
 
   def index
-    post = Post.find( params[:blog_id] )
+    post = Post.find( params[:post_id] )
     render :json=> { success: true, count: post.liked_count }
   end
 
   def create
-    post = Post.find( params[:blog_id] )
+    post = Post.find( params[:post_id] )
     like = post.likes.build
 
     if like.save
@@ -18,7 +18,7 @@ class LikesController < ApplicationController
   end
 
   def destroy
-    post = Post.find( params[:blog_id] )
+    post = Post.find( params[:post_id] )
     like = post.likes.find(params[:id])
     if like.destroy
       render :json=> { success: true, count: post.reload.liked_count }
