@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'rails-bootstrap-markdown'
 gem 'devise', '~> 4.2'
 gem 'rouge', '~> 2.0', '>= 2.0.6'
+gem 'slim', '~> 3.0', '>= 3.0.7'
 
 # database
 gem 'postgresql'
