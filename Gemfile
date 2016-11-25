@@ -21,6 +21,8 @@ gem 'slim', '~> 3.0', '>= 3.0.7'
 # database
 gem 'postgresql'
 
+# add Cookie support
+gem 'js_cookie_rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
