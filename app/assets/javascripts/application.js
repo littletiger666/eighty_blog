@@ -15,4 +15,5 @@
 //= require bootstrap-sprockets
 //= require bootstrap-markdown-bundle
 //= require turbolinks
+//= require js.cookie
 //= require_tree .
