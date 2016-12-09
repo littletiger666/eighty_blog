@@ -1,5 +1,23 @@
 <h2>This is Xiaohu Li, ruby on rails developer</h2>
 
 <% unless user_signed_in? %>
+  <%= @ip %>
   <%= link_to 'Admin', user_session_path %>
 <% end %>
+
+
+
+
+<%= "Your ip address is :" + @ip %>
+
+<div id="qrcode"></div>
+<script type="text/javascript">
+  var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "<%= about_url %>",
+      width: 128,
+      height: 128,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+  });
+</script>
